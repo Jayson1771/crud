@@ -28,7 +28,7 @@ def add_student():
         db.session.commit()
         flash('Student added successfully!')
         return redirect(url_for('index'))
-    return render_template('add.html')
+    return render_template('adds.html')
 
 # --- Update Route ---
 @app.route('/edit/<int:id>', methods=['GET', 'POST'])
